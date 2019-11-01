@@ -6,6 +6,8 @@ Some custom ionic 4 components
 
   - A component to display rating similar to Amazon display
  
+ ![Rating display component](https://www.idevotion.fr/images/ratingDisplayComponent.png)
+ 
 ### Installation
 
 To install the component.
@@ -24,7 +26,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
-import {IdRatingDisplayComponent} from 'ideovtion-ionic-components'
+import {IdRatingDisplayComponent} from 'idevotion-ionic-components'
 @NgModule({
   imports: [
     CommonModule,
