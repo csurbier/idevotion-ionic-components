@@ -102,96 +102,100 @@ const HTML_TEMPLATE = `
 `;
  
 const CSS_STYLE = `
-.popup-main-container {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-
-  .container {
-      // flex: 1;
-      // padding: 25px;
-      // border-radius: 10px;
-      //  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-      // position: relative;
-
-     
-      .title {
-          padding-right: 50px;
-
-          h3 {
-              margin: 0;
-              color: #81C200;
-          }
-
-          .rating {
-              display: flex;
-              align-items: center;
-              button {
-                  background: none;
-                  box-shadow: none;
-                  -webkit-box-shadow: none;
-                  padding : 0px;
-              }
-              h4{
-                  margin: 0 0 0 12px;
-                  font-size: 16px;
-                  font-weight: 500;
-                  position: relative;
-                  bottom: -3px;
+rating-display{
+  .popup-main-container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+  
+      .container {
+          // flex: 1;
+          // padding: 25px;
+          // border-radius: 10px;
+          //  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          // position: relative;
+  
+         
+          .title {
+              padding-right: 50px;
+  
+              h3 {
+                  margin: 0;
                   color: #81C200;
               }
-              p{
-                  font-weight: 500;
-                  color: #555555;
+  
+              .rating {
+                  display: flex;
+                  align-items: center;
+                  button {
+                      background: none;
+                      box-shadow: none;
+                      -webkit-box-shadow: none;
+                      padding : 0px;
+                  }
+                  h4{
+                      margin: 0 0 0 12px;
+                      font-size: 16px;
+                      font-weight: 500;
+                      position: relative;
+                      bottom: -3px;
+                      color: #81C200;
+                  }
+                  p{
+                      font-weight: 500;
+                      color: #555555;
+                  }
               }
           }
-      }
-
-      .rating-statistics {
-          .statistic {
-              display: flex;
-              align-items: center;
-              color: #0081C2;
-              &:not(.has-rate){
-                  color: #767676;
-              }
-
-              &+.statistic {
-                  margin-top: 8px;
-              }
-
-              .label {
-                  flex: 0 0 72px;
-                  font-weight: 500;
-              }
-
-              .value {
-                  flex: 0 0 50px;
-                  text-align: right;
-                  font-weight: 500;
-              }
-
-              .progress-bar {
-                  flex: 1;
-                  position: relative;
-                  height: 22px;
-                  background: #F3F3F3;
-                  border-radius: 2px;
-                  box-shadow: inset 0px 0px 0px 1px #D5D5D5, inset 0px 3px 6px 1px rgba(151, 151, 151, 0.4);
-                  .bar{
-                      position: absolute;
-                      height: 100%;
-                      left: 0;
-                      top: 0;
-                      background-image: linear-gradient(180deg, #FFCB00 1%, #FEAF01 100%);
-                      box-shadow: inset 0px 0px 0px 1px #B17704;
+  
+          .rating-statistics {
+              .statistic {
+                  display: flex;
+                  align-items: center;
+                  color: #0081C2;
+                  &:not(.has-rate){
+                      color: #767676;
+                  }
+  
+                  &+.statistic {
+                      margin-top: 8px;
+                  }
+  
+                  .label {
+                      flex: 0 0 72px;
+                      font-weight: 500;
+                  }
+  
+                  .value {
+                      flex: 0 0 50px;
+                      text-align: right;
+                      font-weight: 500;
+                  }
+  
+                  .progress-bar {
+                      flex: 1;
+                      position: relative;
+                      height: 22px;
+                      background: #F3F3F3;
+                      border-radius: 2px;
+                      box-shadow: inset 0px 0px 0px 1px #D5D5D5, inset 0px 3px 6px 1px rgba(151, 151, 151, 0.4);
+                      .bar{
+                          position: absolute;
+                          height: 100%;
+                          left: 0;
+                          top: 0;
+                          background-image: linear-gradient(180deg, #FFCB00 1%, #FEAF01 100%);
+                          box-shadow: inset 0px 0px 0px 1px #B17704;
+                      }
                   }
               }
           }
       }
   }
-}
+      
+  }
+  
 `;
  
 @Component({
