@@ -2,7 +2,7 @@
 
 Some custom ionic 4 components
 
-# <rating-display> component
+# rating-display component
 
   - A component to display rating similar to Amazon display
  
