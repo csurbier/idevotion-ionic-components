@@ -1,0 +1,38 @@
+{
+  "name": "idevotion-ionic-components",
+  "version": "1.0.0",
+  "description": "Ionic custom components",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "ngc": "ngc",
+    "build": "rm -rf dist && npm run ngc",
+    "publishPackage": "npm run build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saimon24/ionic-academy-module.git"
+  },
+  "keywords": [],
+  "author": "Christophe Surbier",
+  "license": "MIT",
+  "homepage": "https://www.idevotion.fr",
+  "devDependencies": {
+    "@angular/common": "^7.2.2",
+    "@angular/compiler": "^7.2.2",
+    "@angular/compiler-cli": "^7.2.2",
+    "@angular/core": "^7.2.2",
+    "@angular/forms": "^7.2.2",
+    "@angular/router": "^7.2.2",
+    "@angular/platform-browser": "^7.2.2",
+    "@angular/platform-browser-dynamic": "^7.2.2",
+    "@types/node": "^12.6.9",
+    "@ionic/angular": "^4.1.0",
+    "rxjs": "^6.5.2",
+    "typescript": "~3.1.6",
+    "zone.js": "~0.8.29"
+  }
+}

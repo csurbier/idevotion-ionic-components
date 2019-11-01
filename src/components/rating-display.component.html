@@ -1,0 +1,97 @@
+    <div class="popup-main-container">
+      <div class="container">
+        <div class="title">
+          <h3>{{title}}</h3>
+          <div class="rating">
+              <button [ngStyle]="{'width' : fontSize, 'height' : fontSize}" *ngFor="let index of starsArray" id="{{index}}" type="button" ion-button icon-only>
+                  <ion-icon [ngStyle]="{'color':index < this.Math.round(this.parseFloat(note)) ? activeColor : defaultColor, 'font-size' : fontSize }" 
+                  name="{{(halfStar ==='true' && (note - index > 0) && (note - index <= 0.5)) ? halfIcon : (index < this.Math.round(this.parseFloat(note))) ? activeIcon : defaultIcon}}"></ion-icon>
+              </button>
+              <h4>{{note}} / 5</h4>
+          </div>
+          <p>{{totalNote}} Vote(s)</p>
+        </div>
+  
+        <div class="rating-statistics">
+  
+          <div class="statistic has-rate" *ngIf="fivePourcent>0">
+            <div class="label">5 etoiles</div>
+            <div class="progress-bar">
+              <div class="bar" [ngStyle]="{'width': fivePourcentProgress}"></div>
+            </div>
+            <div class="value">{{fivePourcent}}%</div>
+          </div>
+          <div class="statistic" *ngIf="fivePourcent==0">
+              <div class="label">5 etoiles</div>
+              <div class="progress-bar">
+                <div class="bar" [ngStyle]="{'width': fivePourcentProgress}"></div>
+              </div>
+              <div class="value">{{fivePourcent}}%</div>
+            </div>
+  
+          <div class="statistic has-rate" *ngIf="fourPourcent>0">
+            <div class="label">4 etoiles</div>
+            <div class="progress-bar">
+              <div class="bar" [ngStyle]="{'width': fourPourcentProgress}"></div>
+            </div>
+            <div class="value">{{fourPourcent}}%</div>
+          </div>
+          <div class="statistic" *ngIf="fourPourcent==0">
+              <div class="label">4 etoiles</div>
+              <div class="progress-bar">
+                <div class="bar" [ngStyle]="{'width': fourPourcentProgress}"></div>
+              </div>
+              <div class="value">{{fourPourcent}}%</div>
+            </div>
+  
+          <div class="statistic has-rate"  *ngIf="threePourcent>0">
+            <div class="label">3 etoiles</div>
+            <div class="progress-bar">
+              <div class="bar" [ngStyle]="{'width': threePourcentProgress}" ></div>
+            </div>
+            <div class="value">{{threePourcent}}%</div>
+          </div>
+  
+          <div class="statistic"  *ngIf="threePourcent==0">
+              <div class="label">3 etoiles</div>
+              <div class="progress-bar">
+                <div class="bar" [ngStyle]="{'width': threePourcentProgress}" ></div>
+              </div>
+              <div class="value">{{threePourcent}}%</div>
+            </div>
+  
+          <div class="statistic has-rate" *ngIf="twoPourcent>0">
+            <div class="label">2 etoiles</div>
+            <div class="progress-bar">
+              <div class="bar" [ngStyle]="{'width': twoPourcentProgress}"></div>
+            </div>
+            <div class="value">{{twoPourcent}}%</div>
+          </div>
+  
+          <div class="statistic" *ngIf="twoPourcent==0">
+              <div class="label">2 etoiles</div>
+              <div class="progress-bar">
+                <div class="bar" [ngStyle]="{'width': twoPourcentProgress}"></div>
+              </div>
+              <div class="value">{{twoPourcent}}%</div>
+            </div>
+  
+            <div class="statistic has-rate" *ngIf="onePourcent>0">
+                <div class="label">1 etoiles</div>
+                <div class="progress-bar">
+                  <div class="bar" [ngStyle]="{'width': onePourcentProgress}"></div>
+                </div>
+                <div class="value">{{onePourcent}}%</div>
+              </div>
+      
+          <div class="statistic" *ngIf="onePourcent==0">
+            <div class="label">1 etoiles</div>
+            <div class="progress-bar">
+              <div class="bar" [ngStyle]="{'width': onePourcentProgress}"></div>
+            </div>
+            <div class="value">{{onePourcent}}%</div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
