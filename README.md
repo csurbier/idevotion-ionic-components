@@ -50,7 +50,7 @@ import {IDevotionIonicComponentModule} from 'idevotion-ionic-component'
 export class HomePageModule {}
 ```
 
-### How to use rating-display:
+### How to use <rating-display>:
 On your html page you can use :
 ```sh
  <rating-display title="YourTitle" totalNote="7" note=3.5 nbNoteOne=0 nbNoteTwo=1 nbNoteThree=3 nbNoteFour=1 nbNote5=2></rating-display>
@@ -72,13 +72,16 @@ You can customize the following parameters:
 | defaultColor | Default color for inactive star (default is #767676)  |
 
 
-### How to use search-places:
+### How to use <search-places>:
 
 To be able to use the component, you need to include the Google Map library to your **index.html** of your app with a valid API KEY for using places api.
 
 ```sh
 <script src="https://maps.googleapis.com/maps/api/js?v=3&key=<yourapikey>&libraries=places"></script>
 ```
+
+Please notice that this component use **Storage** (https://ionicframework.com/docs/building/storage) so we need to include it in your page or app module.
+
 On your html page you can use :
 ```sh
  <search-places withHistory=true (itemSelected)="itemSelected($event)"></search-places>
@@ -88,7 +91,7 @@ You can customize the following parameters:
 
 | Parameters | Definition |
 | ------ | ------ |
-| withHistory | Set tru if you want the component to save your selected places and display them for futur use |
+| withHistory | Set true if you want the component to save your selected places and display them for futur use |
 | restrictCountry | true or false (default is true). Use to indicate if your want Google Places to restrict the country in the search |
 | countryRestricted | List of country iso code you want to restrict. (default is "FR") |
 
