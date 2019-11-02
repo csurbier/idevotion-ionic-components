@@ -1,6 +1,10 @@
 # idevotion-ionic-components
 
-Some custom ionic 4 components
+Some custom ionic 4 components. I will add new components on regular intervals.
+If you use it and like it, please feel free to:
+
+ <a href="https://www.buymeacoffee.com/csurbier" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 207px !important;" ></a>
+
 
 # rating-display component
 
