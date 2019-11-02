@@ -2,11 +2,11 @@
 
 Some custom ionic 4 components
 
-# <rating-display> component
+# rating-display component
 
   - A component to display rating similar to Amazon display
  ![Rating display component](https://www.idevotion.fr/images/ratingDisplayComponent.png)
-# <search-places> component
+# search-places component
 
   - A component to search google places 
  ![Rating display component](https://www.idevotion.fr/images/searchGooglePlaces.gif)
@@ -50,7 +50,7 @@ import {IDevotionIonicComponentModule} from 'idevotion-ionic-component'
 export class HomePageModule {}
 ```
 
-### How to use <rating-display>:
+### How to use rating-display:
 On your html page you can use :
 ```sh
  <rating-display title="YourTitle" totalNote="7" note=3.5 nbNoteOne=0 nbNoteTwo=1 nbNoteThree=3 nbNoteFour=1 nbNote5=2></rating-display>
@@ -72,7 +72,7 @@ You can customize the following parameters:
 | defaultColor | Default color for inactive star (default is #767676)  |
 
 
-### How to use <search-places>:
+### How to use search-places:
 
 To be able to use the component, you need to include the Google Map library to your **index.html** of your app with a valid API KEY for using places api.
 
