@@ -1,16 +1,25 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
-import { IdRatingDisplayComponent } from './components/rating-display.component';
 import { IonicModule } from '@ionic/angular';
- 
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
+import { IdRatingDisplayComponent } from './components/rating-display.component';
+import {IdSearchGooglePlacesComponent} from './components/search-google-places'; 
+
 @NgModule({
     imports: [
-        IonicModule
+        IonicModule,
+        CommonModule,
+        FormsModule,
+       
     ],
     declarations: [
-        IdRatingDisplayComponent
+        IdRatingDisplayComponent,
+        IdSearchGooglePlacesComponent
     ],
     exports: [
-        
+        IdRatingDisplayComponent,
+        IdSearchGooglePlacesComponent
     ]
 })
 export class IDevotionIonicComponentModule {

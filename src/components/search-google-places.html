@@ -1,0 +1,13 @@
+<ion-searchbar  mode="ios" [(ngModel)]="autocomplete.query" [showCancelButton]="false" (ionInput)="updateSearch()"
+(ionCancel)="dismiss()" (ionClear)="dismiss()" placeholder="">
+</ion-searchbar>
+<ion-list lines="full">
+  <ion-item  *ngFor="let item of items" (click)="chooseItem(item)">
+    <ion-icon slot="end" color="success" size="small" class="wg-arrow-line-left">
+    </ion-icon>
+    <ion-label text-wrap>
+      <h2>{{item.structured_formatting.main_text}}</h2>
+      <p>{{item.structured_formatting.secondary_text}}</p>
+    </ion-label>
+  </ion-item>
+</ion-list>
