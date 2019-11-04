@@ -15,6 +15,11 @@ If you use it and like it, please feel free to:
   - A component to search google places 
  ![Rating display component](https://www.idevotion.fr/images/searchGooglePlaces.gif)
  
+# imageGallery component
+
+  - A component to display a gallery of images. Two layout supported : standard and pinterest 
+ ![Rating display component](https://www.idevotion.fr/images/galleryImage.gif)
+ 
 ### Installation
 
 To install the components.
@@ -104,6 +109,47 @@ use **(itemSelected)** event to know when a place is selected.
 ```sh
   itemSelected(item){
     console.log(item)
+  }
+ ```
+ 
+ ### How to use imageGallery:
+
+Just include the **imageGallery** tag in your html
+
+```sh
+  <imageGallery galleryType="standard" 
+  imagesToDisplay="{{images}}"
+  (imagesSelected)="imagesSelected($event)">
+
+    </imageGallery>
+```
+You can customize the following parameters:
+
+| Parameters | Definition |
+| ------ | ------ |
+| galleryType | standard or pinterest |
+| imagesToDisplay | a list of images url to display |
+
+Exemple:
+```sh
+let image1 = 'https://images.unsplash.com/photo-1422004707501-e8dad229e17a?fm=jpg';
+let image2 = 'https://images.unsplash.com/photo-1439931444800-9bcc83f804a6?fm=jpg';
+let image3 = 'https://images.unsplash.com/photo-1417128281290-30a42da46277?fm=jpg';
+
+    this.images=[]
+    this.images.push(image1)
+    this.images.push(image2)
+    this.images.push(image3)
+    this.images.push(image1)
+    this.images.push(image2)
+    this.images.push(image3)
+    this.images.push(image1)
+```
+use **(imagesSelected)** event to know when an image is selected.
+
+```sh
+  imagesSelected(url){
+    console.log("Image selected "+url)
   }
  ```
  

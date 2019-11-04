@@ -1,0 +1,17 @@
+<div [ngSwitch]="galleryType">
+  <!-- Responsive Layout with Ion Grid-->
+  <ion-grid *ngSwitchCase="'standard'">
+    <ion-row>
+      <ion-col size-xs="12" size-sm="12" size-md="6" size-lg="4" *ngFor="let image of images" (click)="clickImage(image)">
+        <div class="image-container" [style.background-image]="'url(' + image + ')'" ></div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="images" *ngSwitchCase="'pinterest'">
+    <div class="one-image" *ngFor="let image of images" (click)="clickImage(image)">
+      <ion-img [src]="image"></ion-img>
+    </div>
+  </div>
+ 
+</div>

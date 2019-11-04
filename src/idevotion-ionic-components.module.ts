@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { IdRatingDisplayComponent } from './components/rating-display.component';
 import {IdSearchGooglePlacesComponent} from './components/search-google-places'; 
-
+import {IdImageGalleryComponent} from './components/image-gallery.component';
 @NgModule({
     imports: [
         IonicModule,
@@ -15,11 +15,13 @@ import {IdSearchGooglePlacesComponent} from './components/search-google-places';
     ],
     declarations: [
         IdRatingDisplayComponent,
-        IdSearchGooglePlacesComponent
+        IdSearchGooglePlacesComponent,
+        IdImageGalleryComponent
     ],
     exports: [
         IdRatingDisplayComponent,
-        IdSearchGooglePlacesComponent
+        IdSearchGooglePlacesComponent,
+        IdImageGalleryComponent
     ]
 })
 export class IDevotionIonicComponentModule {
