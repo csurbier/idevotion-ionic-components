@@ -1,6 +1,6 @@
 {
   "name": "idevotion-ionic-components",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Ionic custom components",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",

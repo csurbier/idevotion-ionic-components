@@ -182,6 +182,7 @@ const CSS_STYLE = `
 export class IdRatingDisplayComponent implements OnInit {
 
   @Input() title : string="";
+  @Input() labelStars : string="étoiles";
   @Input() note : number=0;
   @Input() totalNote : number=0;;
   @Input() nbNoteOne : number;
@@ -216,7 +217,6 @@ export class IdRatingDisplayComponent implements OnInit {
   }
  
   calculate(){
-    console.log("Note "+this.note)
     if (this.note<0){
       this.note=0
     }
@@ -233,11 +233,7 @@ export class IdRatingDisplayComponent implements OnInit {
     this.fourPourcentProgress = String(this.fourPourcent)+"%"
     this.fivePourcent = Number(((this.nbNoteFive/this.totalNote)*100).toFixed(1))
     this.fivePourcentProgress = String(this.fivePourcent)+"%"
-    console.log("On a "+this.onePourcent+" "+this.onePourcentProgress)
-    console.log("On a "+this.twoPourcent+" "+this.twoPourcentProgress)
-    console.log("On a "+this.threePourcent+" "+this.threePourcentProgress)
-    console.log("On a "+this.fourPourcent+" "+this.fourPourcentProgress)
-    console.log("On a "+this.fivePourcent+" "+this.fivePourcentProgress)
+   
   }
 
   ngOnInit() {
@@ -245,7 +241,6 @@ export class IdRatingDisplayComponent implements OnInit {
     for(var i=0; i < 5; i++) {
       this.starsArray.push(i);
     }
-    console.log("On calcule les notes")
     this.calculate()
    }
 

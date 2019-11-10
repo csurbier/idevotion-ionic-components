@@ -70,6 +70,7 @@ You can customize the following parameters:
 | Parameters | Definition |
 | ------ | ------ |
 | title | The label you want to display |
+| labelStars | The label for stars |
 | note | The note to display |
 | totalNote | Total number of vote received |
 | nbNoteOne | Total number received for one star  |
@@ -112,7 +113,7 @@ use **(itemSelected)** event to know when a place is selected.
   }
  ```
  
- ### How to use imageGallery:
+### How to use imageGallery:
 
 Just include the **imageGallery** tag in your html
 
