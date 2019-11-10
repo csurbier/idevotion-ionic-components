@@ -16,14 +16,14 @@ const HTML_TEMPLATE = `
 <div class="rating-statistics">
 
   <div class="statistic has-rate" *ngIf="fivePourcent>0">
-    <div class="label">5 etoiles</div>
+    <div class="label">5 {{labelStars}}</div>
     <div class="progress-bar">
       <div class="bar" [ngStyle]="{'width': fivePourcentProgress}"></div>
     </div>
     <div class="value">{{fivePourcent}}%</div>
   </div>
   <div class="statistic" *ngIf="fivePourcent==0">
-      <div class="label">5 etoiles</div>
+      <div class="label">5 {{labelStars}}</div>
       <div class="progress-bar">
         <div class="bar" [ngStyle]="{'width': fivePourcentProgress}"></div>
       </div>
@@ -31,14 +31,14 @@ const HTML_TEMPLATE = `
     </div>
 
   <div class="statistic has-rate" *ngIf="fourPourcent>0">
-    <div class="label">4 etoiles</div>
+    <div class="label">4 {{labelStars}}</div>
     <div class="progress-bar">
       <div class="bar" [ngStyle]="{'width': fourPourcentProgress}"></div>
     </div>
     <div class="value">{{fourPourcent}}%</div>
   </div>
   <div class="statistic" *ngIf="fourPourcent==0">
-      <div class="label">4 etoiles</div>
+      <div class="label">4 {{labelStars}}</div>
       <div class="progress-bar">
         <div class="bar" [ngStyle]="{'width': fourPourcentProgress}"></div>
       </div>
@@ -46,7 +46,7 @@ const HTML_TEMPLATE = `
     </div>
 
   <div class="statistic has-rate"  *ngIf="threePourcent>0">
-    <div class="label">3 etoiles</div>
+    <div class="label">3 {{labelStars}}</div>
     <div class="progress-bar">
       <div class="bar" [ngStyle]="{'width': threePourcentProgress}" ></div>
     </div>
@@ -54,7 +54,7 @@ const HTML_TEMPLATE = `
   </div>
 
   <div class="statistic"  *ngIf="threePourcent==0">
-      <div class="label">3 etoiles</div>
+      <div class="label">3 {{labelStars}}</div>
       <div class="progress-bar">
         <div class="bar" [ngStyle]="{'width': threePourcentProgress}" ></div>
       </div>
@@ -62,7 +62,7 @@ const HTML_TEMPLATE = `
     </div>
 
   <div class="statistic has-rate" *ngIf="twoPourcent>0">
-    <div class="label">2 etoiles</div>
+    <div class="label">2 {{labelStars}}</div>
     <div class="progress-bar">
       <div class="bar" [ngStyle]="{'width': twoPourcentProgress}"></div>
     </div>
@@ -70,7 +70,7 @@ const HTML_TEMPLATE = `
   </div>
 
   <div class="statistic" *ngIf="twoPourcent==0">
-      <div class="label">2 etoiles</div>
+      <div class="label">2 {{labelStars}}</div>
       <div class="progress-bar">
         <div class="bar" [ngStyle]="{'width': twoPourcentProgress}"></div>
       </div>
@@ -78,7 +78,7 @@ const HTML_TEMPLATE = `
     </div>
 
     <div class="statistic has-rate" *ngIf="onePourcent>0">
-        <div class="label">1 etoiles</div>
+        <div class="label">1 {{labelStars}}</div>
         <div class="progress-bar">
           <div class="bar" [ngStyle]="{'width': onePourcentProgress}"></div>
         </div>
@@ -86,7 +86,7 @@ const HTML_TEMPLATE = `
       </div>
 
   <div class="statistic" *ngIf="onePourcent==0">
-    <div class="label">1 etoiles</div>
+    <div class="label">1 {{labelStars}}</div>
     <div class="progress-bar">
       <div class="bar" [ngStyle]="{'width': onePourcentProgress}"></div>
     </div>
