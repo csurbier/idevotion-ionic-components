@@ -62,7 +62,7 @@ export class HomePageModule {}
 ### How to use rating-display:
 On your html page you can use :
 ```sh
- <rating-display title="YourTitle" totalNote="7" note=3.5 nbNoteOne=0 nbNoteTwo=1 nbNoteThree=3 nbNoteFour=1 nbNote5=2></rating-display>
+ <rating-display title="YourTitle" totalNote="7" note=3.5 nbNoteOne=0 nbNoteTwo=1 nbNoteThree=3 nbNoteFour=1 nbNoteFive=2></rating-display>
 ```
 You can customize the following parameters:
 
